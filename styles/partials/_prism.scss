@@ -1,0 +1,61 @@
+.prism {
+	width: 1rem;
+	height: 1rem;
+	margin: 30px;
+	transform-style: preserve-3d;
+	perspective: 500px;
+	animation: spin infinite 5s;
+}
+
+.side {
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	border: 1px groove $accent2;
+}
+
+.front {
+	transform: translateZ(0.5rem);
+}
+
+.topFront {
+	transform-origin: bottom;
+	transform: translateY(-1rem) translateZ(0.5rem) rotateX(30deg);
+}
+
+.topBack {
+	transform-origin: bottom;
+	transform: translateZ(-0.5rem) translateY(-1rem) rotateX(-30deg);
+}
+
+.right {
+	transform: rotateY(90deg) translateZ(0.5rem);
+}
+
+.left {
+	transform: rotateY(-90deg) translateZ(0.5rem);
+}
+
+.bottomFront {
+	transform-origin: top;
+	transform: translateY(1rem) translateZ(0.5rem) rotateX(-30deg);
+}
+
+.bottomBack {
+	transform-origin: top;
+	transform: translateY(1rem) translateZ(-0.5rem) rotateX(30deg);
+}
+
+.back {
+	transform: rotateY(-180deg) translateZ(0.5rem);
+}
+
+@keyframes spin {
+	from {
+		-webkit-transform: rotate3d(1, 1, 1, 0deg);
+	}
+
+	to {
+		-webkit-transform: rotate3d(1, 1, 1, 360deg);
+	}
+}

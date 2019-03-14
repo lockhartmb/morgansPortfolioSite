@@ -1,5 +1,6 @@
 html {
     font-size: 125%;
+    color: $mainFont;
 }
 
 img {
@@ -13,4 +14,19 @@ h1 {
 
 p {
     font-family: 'Fauna One', serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 88%;
+    max-width: 1250px;
+    margin: 0 auto;
 }

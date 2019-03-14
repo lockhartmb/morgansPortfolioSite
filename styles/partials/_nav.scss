@@ -1,80 +1,50 @@
-.prism {
-    width: 45px;
-    height: 45px;
-    margin: 50px;
-    transform-style: preserve-3d;
-    perspective: 500px;
-    animation: spin infinite 5s;
-}
-
-.side {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    border: 1px groove $accent2;
-}
-
-.front {
-    transform: translateZ(22.5px);
-}
-
-.topFront {
-    transform-origin: bottom;
-    transform:
-        translateY(-45px) translateZ(22.5px) rotateX(30deg);
-}
-
-.topBack {
-    transform-origin: bottom;
-    transform:
-        translateZ(-22.5px) translateY(-45px) rotateX(-30deg);
-}
-
-.right {
-    transform: rotateY(90deg) translateZ(22.5px);
-}
-
-.left {
-    transform: rotateY(-90deg) translateZ(22.5px);
-}
-
-.bottomFront {
-    transform-origin: top;
-    transform:
-        translateY(45px) translateZ(22.5px) rotateX(-30deg);
-}
-
-.bottomBack {
-    transform-origin: top;
-    transform:
-        translateY(45px) translateZ(-22.5px) rotateX(30deg);
-}
-
-.back {
-    transform: rotateY(-180deg) translateZ(22.5px);
-}
-
-@keyframes spin {
-    from {
-        -webkit-transform: rotate3d(1, 1, 1, 0deg);
-    }
-
-    to {
-        -webkit-transform: rotate3d(1, 1, 1, 360deg);
-    }
-}
-
 .menu {
-    width: 12%;
-    background-color: rgba(0,0,0,0.1);
-    padding: 1px 0;
-    position: fixed;
-    height: 100vh;
-    margin: 0
-}
+	width: 100%;
+	background-color: rgba($background, 0.5);
+	padding: 1px 0;
+	position: fixed;
+	margin: 0;
+	z-index: 999;
 
-.links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		// justify-content: space-between;
+    }
+    
+	.links {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		text-transform: uppercase;
+		font-size: 0.8rem;
+
+		a {
+			padding: 10px;
+			color: $mainFont;
+			transition: color $transition;
+		}
+
+		a:hover {
+			color: $accent2;
+		}
+	}
+
+    .pageLinks {
+        margin: 0 auto;
+    }
+
+	.name {
+		font-size: 1.2rem;
+	}
+
+	span {
+		color: green;
+		font-weight: bold;
+		font-size: 200%;
+		line-height: 0;
+	}
 }

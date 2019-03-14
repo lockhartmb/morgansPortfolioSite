@@ -1,5 +1,5 @@
 header {
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .openMenu {
@@ -7,13 +7,11 @@ header {
     height: 40px;
 }
 
-.menu {
-    display: none;
-    position: absolute;
-    background: rgba(255,255,255,0.8);
-    width: 100%;
+.logo {
+    width: 40px;
 }
 
-.showMenu {
-    display: block;
+.menu {
+    background: rgba(255,255,255,0.8);
+    width: 100%;
 }

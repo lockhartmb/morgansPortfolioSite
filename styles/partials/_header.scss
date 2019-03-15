@@ -8,6 +8,7 @@ header {
 .headerContent {
 	width: 100%;
 	flex-grow: 1;
+    text-align: left;
 
 	.wrapper {
 		display: flex;
@@ -24,7 +25,6 @@ header {
         color: lighten(grey, 40%);
         z-index: 0;
         text-transform: uppercase;
-        text-align: center;
         line-height: 5rem;
     }
 
@@ -47,12 +47,13 @@ header {
 
         span::after {
             content: '';
-            height: 4px;
+            height: 8px;
             width: 100%;
             background-color: $accent2;
             position: absolute;
-            bottom: -8px;
+            bottom: 8px;
             left: 0;
+            z-index: -1;
         }
 	}
 }

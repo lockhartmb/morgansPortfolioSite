@@ -1,0 +1,19 @@
+.about {
+    text-align: center;
+    
+    span {
+        color: $accent2;
+        font-size: 2rem;
+        line-height: 0;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    img {
+        border-radius: 5px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}

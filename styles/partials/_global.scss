@@ -1,32 +1,47 @@
 html {
-    font-size: 125%;
-    color: $mainFont;
+	font-size: 125%;
+	color: $mainFont;
+	font-family: $sansSerifFont;
 }
 
 img {
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
+h1,
+h2 {
+	font-family: $serifFont;
 }
 
-p {
-    font-family: 'Fauna One', serif;
+h2 {
+	text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+     span {
+        color: $accent2;
+        font-size: 2rem;
+        line-height: 0;
+    }
 }
 
 * {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .wrapper {
-    width: 88%;
-    max-width: 1250px;
-    margin: 0 auto;
+	width: 90%;
+	height: 100%;
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+main section {
+    padding: 50px 0;
 }

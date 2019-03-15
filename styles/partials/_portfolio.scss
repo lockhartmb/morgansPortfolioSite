@@ -1,0 +1,40 @@
+h3 {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        height: 3px;
+        width: 100%;
+        background-color: $accent2;
+    }
+}
+
+.portfolio {
+
+    .project {
+        margin-bottom: 30px;
+    }
+
+    img {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+        padding-bottom: 20px;
+    }
+
+    a {
+        border: 2px solid $accent2;
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        text-align: center;
+        padding: 10px 0;
+        color: $mainFont;
+    }
+}

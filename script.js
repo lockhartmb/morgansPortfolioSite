@@ -22,3 +22,5 @@ const openMenu = () => {
 }
 
 openMenu();
+
+$(document).ready()

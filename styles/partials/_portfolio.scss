@@ -1,40 +1,41 @@
-h3 {
-    position: relative;
-
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        height: 3px;
-        width: 100%;
-        background-color: $accent2;
-    }
-}
-
 .portfolio {
-
+    
     .project {
-        margin-bottom: 30px;
-    }
-
+		margin-bottom: 30px;
+	}
+    
     img {
         width: 80%;
         margin: 30px auto;
+        border: 0.5px solid $mainFont;
     }
 
     .subtitle {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+        text-transform: uppercase;
         padding-bottom: 20px;
     }
-
-    a {
-        border: 2px solid $accent2;
-        display: block;
-        width: 50%;
-        margin: 20px auto;
-        text-align: center;
-        padding: 10px 0;
-        color: $mainFont;
+    
+    h3 {
+        font-size: 1rem;
+        font-weight: bold;
     }
+
+	a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+		width: 50%;
+		margin: 20px auto;
+		padding: 5px 15px;
+        color: $background;
+        background-color: $mainFont;
+        border-radius: 25px;
+        text-transform: lowercase;
+
+        i {
+            font-size: 0.5rem;
+        }
+	}
 }

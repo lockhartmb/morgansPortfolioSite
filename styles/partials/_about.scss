@@ -1,5 +1,5 @@
 .about {
-    text-align: center;
+    text-align: left;
     
     span {
         color: $accent2;
@@ -15,5 +15,14 @@
         border-radius: 5px;
         width: 80%;
         margin: 0 auto;
+    }
+
+    a {
+        width: 100%;
+        display: block;
+    }
+
+    .prism {
+        margin: 40px auto 0 auto;
     }
 }

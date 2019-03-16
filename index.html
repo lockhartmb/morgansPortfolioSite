@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Morgan Lockhart</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -15,9 +21,10 @@
 </head>
 
 <body>
+    <a href="#mainContent" class="skipLink">Skip to main content</a>
 
     <header>
-        <div class="prism">
+        <div class="prism menuOpen">
             <div class="side front"></div>
             <div class="side back"></div>
             <div class="side right"></div>
@@ -27,10 +34,11 @@
             <div class="side bottomFront"></div>
             <div class="side bottomBack"></div>
         </div>
-        <!-- <p>Menu</p> -->
         <nav class="menu">
             <div class="wrapper">
-
+                <p class="closeMenu">
+                    <i class="fas fa-times"></i>
+                </p>
                 <ul class="links pageLinks">
                     <li>
                         <a href="">Home</a>
@@ -50,7 +58,7 @@
                 </ul>
                 <ul class="links socialLinks">
                     <li>
-                        <a href="https://twitter.com/morganblockhart">
+                        <a href="https://twitter.com/morganblockhart" target="_blank">
                             <i class="fab fa-twitter"></i>
                             <span class="visuallyHidden">Twitter</span>
                         </a>
@@ -78,13 +86,14 @@
         </nav>
 
 
-        <section class="headerContent">
+        <section id="mainContent" class="headerContent">
             <div class="wrapper">
 
                 <p class="backgroundText">Web developer.</p>
                 <div class="intro">
                     <h1>Hi, I'm <span>Morgan Lockhart</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis?</p>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis?</p> -->
+                    <a href="#about">learn more about me</a>
                 </div>
             </div> <!-- end of wrapper div -->
         </section>
@@ -95,18 +104,32 @@
     <main>
 
 
-        <section class="about">
+        <section id="about" class="about">
             <div class="wrapper">
                 <h2>About me<span>.</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sunt neque! Earum voluptate
                     mollitia rerum architecto pariatur minima tenetur labore. Voluptatem dolorum tempore ipsam. Dolorem
                     deleniti sit similique eveniet et?</p>
                 <img src="assets/morganHeadshot.jpg" alt="Morgan Lockhart wearing a white shirt and a gold necklace">
+                <a href="#skills">
+                    <div class="prism">
+                        <div class="side front"></div>
+                        <div class="side back"></div>
+                        <div class="side right"></div>
+                        <div class="side left"></div>
+                        <div class="side topFront"></div>
+                        <div class="side topBack"></div>
+                        <div class="side bottomFront"></div>
+                        <div class="side bottomBack"></div>
+                    </div>
+                    <span class="visuallyHidden">Click to go to skills section</span>
+                </a>
+
             </div>
         </section>
 
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <div class="wrapper">
                 <h2>Skills<span>.</span></h2>
                 <div class="gallery">
@@ -165,12 +188,6 @@
                         </figcaption>
                     </figure>
                     <figure class="galleryItem">
-                        <img class="firebase" src="assets/firebase.svg" alt="firebase icon">
-                        <figcaption>
-                            Firebase
-                        </figcaption>
-                    </figure>
-                    <figure class="galleryItem">
                         <i class="devicon-visualstudio-plain"></i>
                         <figcaption>
                             VS Code
@@ -182,13 +199,26 @@
                             Responsive
                         </figcaption>
                     </figure>
-                </div>
-            </div>
+                </div> <!-- end of .gallery div -->
+                <a href="#portfolio">
+                    <div class="prism">
+                        <div class="side front"></div>
+                        <div class="side back"></div>
+                        <div class="side right"></div>
+                        <div class="side left"></div>
+                        <div class="side topFront"></div>
+                        <div class="side topBack"></div>
+                        <div class="side bottomFront"></div>
+                        <div class="side bottomBack"></div>
+                    </div>
+                    <span class="visuallyHidden">Click to go to the portfolio section</span>
+                </a>
+            </div> <!-- end of .wrapper div -->
         </section>
 
 
 
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="wrapper">
                 <h2>Latest work<span>.</span></h2>
 
@@ -230,11 +260,25 @@
                     <a href="">GitHub</a>
 
                 </div>
-            </div>
+
+                <a href="#contact">
+                    <div class="prism">
+                        <div class="side front"></div>
+                        <div class="side back"></div>
+                        <div class="side right"></div>
+                        <div class="side left"></div>
+                        <div class="side topFront"></div>
+                        <div class="side topBack"></div>
+                        <div class="side bottomFront"></div>
+                        <div class="side bottomBack"></div>
+                    </div>
+                    <span class="visuallyHidden">Click to go to the portfolio section</span>
+                </a>
+            </div> <!-- end of .wrapper div-->
         </section>
 
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="wrapper">
                 <h2>Contact me<span>.</span></h2>
                 <p>Want to talk more about my work? Reach out!</p>
@@ -281,7 +325,11 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+        integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="script.js"></script>
 </body>
 

@@ -1,26 +1,33 @@
-// const openMenu = () => {
-//     const menuButton = document.getElementsByClassName('openMenu');
-//     // const menu = document.getElementsByClassName('menu');
+$(document).ready(() => {
 
-//     // menuButton.addEventListener('clicked', menu.classList.toggle('showMenu'));
-//     menuButton.onclick = () => {
-//         console.log(this);
-//     }
+    $('a').smoothScroll({
+        offset: 0,
+        speed: 800
+    });
 
-// }
+    // toggling menu open
 
-console.log('hi world');
-
-const openMenu = () => {
-    const menuButton = document.getElementsByClassName('openMenu');
-    const menu = document.getElementsByClassName('menu');
+    // $('.menuOpen').on('click', () => {
+    //     console.log('i was clicked!');
+    //     $('.menu').toggleClass('showMenu');
+    // })
     
-    menuButton.onclick = () => {
-        console.log('the thing was clicked');
-        // menu.classList.toggle('showMenu');
-    }
-}
+    $('.menuOpen').on('click', () => {
 
-openMenu();
+        if ($('.menu').hasClass('showMenu')) {
+            $('.menu').fadeOut();
+            $('.menu').removeClass('showMenu');
+        } else {
+            $('.menu').fadeIn();
+            $('.menu').addClass('showMenu');
+        }
+    })
 
-$(document).ready()
+
+    $('.closeMenu').on('click', () => {
+        $('.menu').fadeOut();
+        $('.menu').removeClass('showMenu');
+    })
+
+
+})

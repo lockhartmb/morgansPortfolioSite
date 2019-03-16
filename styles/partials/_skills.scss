@@ -1,5 +1,9 @@
 .skills {
     background: $background;
+
+    .prism {
+        margin: 40px auto 0 auto;
+    }
 }
 
 .gallery {
@@ -7,7 +11,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: center;
 
     .galleryItem {
         width: 50%;
@@ -17,6 +21,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        color: $mainFont;
+        transition: color $transition;
+
+        &:hover {
+            color: $accent1;
+        }
     }
 
     figcaption {
@@ -27,6 +37,10 @@
     .firebase {
         width: 50px;
         margin: 0 auto;
+
+        &:hover {
+            fill: $accent1;
+        }
     }
 
     .responsive {

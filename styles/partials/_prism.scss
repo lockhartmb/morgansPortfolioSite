@@ -4,7 +4,7 @@
 	margin: 30px;
 	transform-style: preserve-3d;
 	perspective: 500px;
-	animation: spin infinite 5s;
+	animation: spin infinite 5s linear;
 }
 
 .side {

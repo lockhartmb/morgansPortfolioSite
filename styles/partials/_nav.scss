@@ -3,21 +3,34 @@ header .menu {
 }
 
 .menu {
-	width: 50%;
+	width: 60%;
 	height: 100vh;
 	background-color: rgba($background, 0.9);
 	padding: 1px 0;
 	position: fixed;
+	right: 0;
+	top: 0;
 	margin: 0;
 	z-index: 999;
-	
+
 	.wrapper {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		height: 100%;
-    }
-    
+	}
+
+	.closeMenu {
+		text-align: right;
+		padding: 10px 15px 0 0;
+		color: $mainFont;
+		transition: color $transition;
+
+		&:hover {
+			color: $accent2;
+		}
+	}
+
 	.links {
 		list-style: none;
 		padding: 0;
@@ -35,13 +48,12 @@ header .menu {
 		}
 	}
 
-    .pageLinks {
-		
+	.pageLinks {
 		a {
 			display: block;
 		}
 	}
-	
+
 	.socialLinks {
 		display: flex;
 		flex-direction: row;
@@ -60,3 +72,7 @@ header .menu {
 		line-height: 0;
 	}
 }
+
+// header .showMenu {
+// 	display: block;
+// }

@@ -1,3 +1,22 @@
+/* These skip link styles came from the notes, not my head*/
+.skipLink { 
+    position: absolute;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: $background;
+    color: $mainFont;
+}
+
+.skipLink:focus {
+  right: 15px;
+  left: auto;
+  top: 15px;
+}
+
 header {
 	min-height: 100vh;
 	background-color: $background;
@@ -48,6 +67,7 @@ header {
 
         h1 {
             padding-bottom: 15px;
+            line-height: 2.3rem;
         }
 
         span {
@@ -63,6 +83,13 @@ header {
             bottom: 8px;
             left: 0;
             z-index: -1;
+        }
+
+        a {
+            text-decoration: underline;
+            font-size: 0.7rem;
+            color: $accent1;
+            padding-top: 15px;
         }
 	}
 }

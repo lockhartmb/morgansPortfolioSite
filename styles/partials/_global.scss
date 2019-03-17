@@ -10,7 +10,8 @@ img {
 }
 
 h1,
-h2 {
+h2, 
+h3 {
 	font-family: $serifFont;
 }
 
@@ -19,7 +20,7 @@ h2 {
     text-transform: capitalize;
     margin-bottom: 20px;
 
-     span {
+    span {
         color: $accent2;
         font-size: 2rem;
         line-height: 0;
@@ -33,6 +34,10 @@ h2 {
 
 a {
 	text-decoration: none;
+}
+
+ul {
+	list-style: none;
 }
 
 .wrapper {

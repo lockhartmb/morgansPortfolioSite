@@ -2,6 +2,15 @@ header .menu {
 	display: none;
 }
 
+.menuOpen:hover, .closeMenu:hover {
+	cursor: pointer;
+}
+
+.menuLabel {
+	font-size: 0.6rem;
+	padding-left: 23px;
+}
+
 .menu {
 	width: 60%;
 	height: 100vh;
@@ -72,7 +81,3 @@ header .menu {
 		line-height: 0;
 	}
 }
-
-// header .showMenu {
-// 	display: block;
-// }

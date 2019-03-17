@@ -23,10 +23,6 @@
         justify-content: space-between;
         color: $mainFont;
         transition: color $transition;
-
-        &:hover {
-            color: $accent1;
-        }
     }
 
     figcaption {

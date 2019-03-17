@@ -4,13 +4,6 @@ $(document).ready(() => {
         offset: 0,
         speed: 800
     });
-
-    // toggling menu open
-
-    // $('.menuOpen').on('click', () => {
-    //     console.log('i was clicked!');
-    //     $('.menu').toggleClass('showMenu');
-    // })
     
     $('.menuOpen').on('click', () => {
 
@@ -23,11 +16,9 @@ $(document).ready(() => {
         }
     })
 
-
     $('.closeMenu').on('click', () => {
         $('.menu').fadeOut();
         $('.menu').removeClass('showMenu');
     })
-
-
+    
 })

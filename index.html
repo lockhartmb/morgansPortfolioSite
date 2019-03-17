@@ -24,20 +24,24 @@
     <a href="#mainContent" class="skipLink">Skip to main content</a>
 
     <header>
-        <div class="prism menuOpen">
-            <div class="side front"></div>
-            <div class="side back"></div>
-            <div class="side right"></div>
-            <div class="side left"></div>
-            <div class="side topFront"></div>
-            <div class="side topBack"></div>
-            <div class="side bottomFront"></div>
-            <div class="side bottomBack"></div>
+        <div class="menuOpen">
+            <div class="prism">
+                <div class="side front"></div>
+                <div class="side back"></div>
+                <div class="side right"></div>
+                <div class="side left"></div>
+                <div class="side topFront"></div>
+                <div class="side topBack"></div>
+                <div class="side bottomFront"></div>
+                <div class="side bottomBack"></div>
+            </div>
+            <p class="menuLabel">Menu</p>
         </div>
         <nav class="menu">
             <div class="wrapper">
                 <p class="closeMenu">
                     <i class="fas fa-times"></i>
+                    <span class="visuallyHidden">Click to close menu</span>
                 </p>
                 <ul class="links pageLinks">
                     <li>
@@ -90,11 +94,11 @@
             <div class="wrapper">
 
                 <p class="backgroundText">Web developer.</p>
-                <div class="intro">
-                    <h1>Hi, I'm <span>Morgan Lockhart</span></h1>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis?</p> -->
-                    <a href="#about">learn more about me</a>
-                </div>
+                <h1>Hi, I'm <span>Morgan Lockhart</span></h1>
+                <a href="#about">
+                    <i class="fas fa-caret-down"></i>
+                    <span class="visuallyHidden">Click to scroll to the about section</span>
+                </a>
             </div> <!-- end of wrapper div -->
         </section>
 
@@ -107,10 +111,8 @@
         <section id="about" class="about">
             <div class="wrapper">
                 <h2>About me<span>.</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sunt neque! Earum voluptate
-                    mollitia rerum architecto pariatur minima tenetur labore. Voluptatem dolorum tempore ipsam. Dolorem
-                    deleniti sit similique eveniet et?</p>
                 <img src="assets/morganHeadshot.jpg" alt="Morgan Lockhart wearing a white shirt and a gold necklace">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sunt neque! Earum voluptate mollitia rerum architecto pariatur minima tenetur labore. Voluptatem dolorum tempore ipsam. Dolorem deleniti sit similique eveniet et?</p>
                 <a href="#skills">
                     <div class="prism">
                         <div class="side front"></div>
@@ -229,8 +231,7 @@
                     <p class="subtitle">Group React, API, and Firebase project</p>
                     <h3>Box Office Boffo</h3>
 
-                    <p class="description">A game where players predict the top ten highest grossing movies of the
-                        summer and compete against their friends for bragging rights.</p>
+                    <p class="description">Players predict the top ten highest grossing movies of the summer and compete against their friends for bragging rights.</p>
                     <a href="">Live <i class="fas fa-arrow-right"></i></a>
                     <a href="">GitHub <i class="fas fa-arrow-right"></i></a>
 

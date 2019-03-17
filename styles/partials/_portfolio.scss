@@ -1,11 +1,7 @@
 .portfolio {
-
-    .prism {
-        margin: 40px auto 0 auto;
-    }
     
     .project {
-		margin-bottom: 30px;
+        margin-bottom: 45px;
 	}
     
     img {
@@ -18,25 +14,58 @@
         font-size: 0.6rem;
         text-transform: uppercase;
         padding-bottom: 20px;
+        font-weight: bold;
+
+        .interpunt {
+            font-size: 1rem;
+            color: $accent2;
+            line-height: 0;
+        }
+
+        em {
+            font-style: initial;
+            font-weight: initial;
+        }
     }
     
     h3 {
         font-size: 1rem;
         font-weight: bold;
+        padding-bottom: 20px;
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 5px;
+            background-color: $accent2;
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+        }
     }
 
-	a {
+	.project a {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-		width: 50%;
+		width: 35%;
 		margin: 20px auto;
 		padding: 5px 15px;
         color: $background;
         background-color: $mainFont;
         border-radius: 25px;
         text-transform: lowercase;
+        font-size: 0.6rem;
+        transition: all $transition;
+
+        &:hover {
+            background-color: $accent2;
+            color: black;
+            font-weight: bold;
+        }
 
         i {
             font-size: 0.5rem;

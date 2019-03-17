@@ -6,57 +6,116 @@
 	transform-style: preserve-3d;
 	perspective: 500px;
 	animation: spin infinite 5s linear;
-}
-
-.side {
-	position: absolute;
-	width: 1rem;
-	height: 1rem;
-	border: 1px groove $accent2;
-}
-
-.front {
-	transform: translateZ(0.5rem);
-}
-
-.topFront {
-	transform-origin: bottom;
-	transform: translateY(-1rem) translateZ(0.5rem) rotateX(30deg);
-}
-
-.topBack {
-	transform-origin: bottom;
-	transform: translateZ(-0.5rem) translateY(-1rem) rotateX(-30deg);
-}
-
-.right {
-	transform: rotateY(90deg) translateZ(0.5rem);
-}
-
-.left {
-	transform: rotateY(-90deg) translateZ(0.5rem);
-}
-
-.bottomFront {
-	transform-origin: top;
-	transform: translateY(1rem) translateZ(0.5rem) rotateX(-30deg);
-}
-
-.bottomBack {
-	transform-origin: top;
-	transform: translateY(1rem) translateZ(-0.5rem) rotateX(30deg);
-}
-
-.back {
-	transform: rotateY(-180deg) translateZ(0.5rem);
-}
-
-@keyframes spin {
-	from {
-		-webkit-transform: rotate3d(1, 1, 1, 0deg);
+	
+	.side {
+		position: absolute;
+		width: 1rem;
+		height: 1rem;
+		border: 1px solid $accent2;
 	}
+	
+	.front {
+		transform: translateZ(0.5rem);
+	}
+	
+	.topFront {
+		transform-origin: bottom;
+		transform: translateY(-1rem) translateZ(0.5rem) rotateX(30deg);
+	}
+	
+	.topBack {
+		transform-origin: bottom;
+		transform: translateZ(-0.5rem) translateY(-1rem) rotateX(-30deg);
+	}
+	
+	.right {
+		transform: rotateY(90deg) translateZ(0.5rem);
+	}
+	
+	.left {
+		transform: rotateY(-90deg) translateZ(0.5rem);
+	}
+	
+	.bottomFront {
+		transform-origin: top;
+		transform: translateY(1rem) translateZ(0.5rem) rotateX(-30deg);
+	}
+	
+	.bottomBack {
+		transform-origin: top;
+		transform: translateY(1rem) translateZ(-0.5rem) rotateX(30deg);
+	}
+	
+	.back {
+		transform: rotateY(-180deg) translateZ(0.5rem);
+	}
+	
+	@keyframes spin {
+		from {
+			-webkit-transform: rotate3d(1, 1, 1, 0deg);
+		}
+	
+		to {
+			-webkit-transform: rotate3d(1, 1, 1, 360deg);
+		}
+	}
+}
 
-	to {
-		-webkit-transform: rotate3d(1, 1, 1, 360deg);
+.pointedPrism {
+	
+	.topFront {
+		background-color: $accent2;
+		clip-path: polygon(50% 0, 100% 100%, 0 100%);
+		transform-origin: bottom;
+		transform: translateY(-1rem) translateZ(0.5rem) rotateX(30deg);
+	}
+	
+	.topFrontInset {
+		clip-path: polygon(50% 5%, 95% 95%, 5% 95%);
+		background-color: white;
+		transform-origin: bottom;
+		transform: translateY(-1rem) translateZ(0.5rem) rotateX(30deg);
+	}
+	
+	.topBack {
+		clip-path: polygon(50% 0, 100% 100%, 0 100%);
+		background-color: $accent2;
+		transform-origin: bottom;
+		transform: translateZ(-0.5rem) translateY(-1rem) rotateX(-30deg);
+	}
+	
+	.topBackInset {
+		clip-path: polygon(50% 5%, 95% 95%, 5% 95%);
+		background-color: white;
+		transform-origin: bottom;
+		transform: translateZ(-0.5rem) translateY(-1rem) rotateX(-30deg);
+	}
+	
+	.bottomFront {
+		clip-path: polygon(100% 0, 50% 100%, 0 0);
+		background-color: $accent2;
+		transform-origin: top;
+		transform: translateY(1rem) translateZ(0.5rem) rotateX(-30deg);
+	}
+	
+	.bottomFrontInset {
+		clip-path: polygon(95% 5%, 50% 95%, 5% 5%);
+		background-color: white;
+		transform-origin: top;
+		transform: translateY(1rem) translateZ(0.5rem) rotateX(-30deg);
+	}
+	
+	.bottomBack {
+		clip-path: polygon(100% 0, 50% 100%, 0 0);
+		background-color: $accent2;
+		transform-origin: top;
+		transform: translateY(1rem) translateZ(-0.5rem) rotateX(30deg);
+	}
+	
+	.bottomBackInset {
+		clip-path: polygon(95% 5%, 50% 95%, 5% 5%);
+		background-color: white;
+		transform-origin: top;
+		transform: translateY(1rem) translateZ(-0.5rem) rotateX(30deg);
 	}
 }

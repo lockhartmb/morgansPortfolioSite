@@ -1,10 +1,5 @@
 $(document).ready(() => {
 
-    $('a').smoothScroll({
-        offset: 0,
-        speed: 800
-    });
-    
     $('.menuOpen').on('click', () => {
 
         if ($('.menu').hasClass('showMenu')) {

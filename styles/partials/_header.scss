@@ -3,10 +3,9 @@
 	position: absolute;
 	display: block;
 	padding: 15px;
-	border-radius: 10px;
 	left: -1000px;
 	top: 5px;
-	z-index: 30;
+	z-index: 999;
 	background: $background;
 	color: $mainFont;
 }

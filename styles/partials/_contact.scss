@@ -31,8 +31,12 @@
 			border: none;
 			border-bottom: 1px solid $mainFont;
 			background-color: $background;
-			padding: 10px 0;
+			padding: 10px 10px;
 			margin-bottom: 10px;
+
+			&:focus {
+				border: 1px dotted $accent2;
+			}
 		}
 
         textarea {
@@ -56,6 +60,10 @@
 				background-color: $accent2;
 				color: black;
 				font-weight: bold;
+			}
+
+			&:focus {
+				box-shadow: 5px 5px 0 0 $accent2;
 			}
 		}
 	}

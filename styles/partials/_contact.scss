@@ -1,68 +1,97 @@
 .contact {
-    background-color: $background;
+	background-color: $background;
 
-    a {
-        color: $mainFont;
-        transition: color $transition;
-        
-        &:hover {
-            color: $accent2;
-        }
-    }
+	a {
+		color: $mainFont;
+		transition: color $transition;
 
-    a:nth-of-type(1) {
-        text-decoration: underline;
-    }
+		&:hover {
+			color: $accent2;
+		}
+	}
 
-    p {
-        padding-bottom: 20px;
-    }
-    
-    form {
+	a:nth-of-type(1) {
+		text-decoration: underline;
+	}
+
+	p {
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+	form {
         width: 100%;
-        padding-bottom: 20px;
+        max-width: 700px;
+        margin: 0 auto;
+		padding: 30px 0;
 
-        input, textarea {
-            width: 100%;
-            border: none;
-            border-bottom: 1px solid $mainFont;
-            background-color: $background;
-            padding: 10px 0;
+		input,
+		textarea {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid $mainFont;
+			background-color: $background;
+			padding: 10px 0;
+			margin-bottom: 10px;
+		}
+
+        textarea {
+            height: 120px;
         }
 
-        button {
-            background-color: $mainFont;
-            color: $background;
-            width: 60%;
-            border: none;
-            border-radius: 25px;
-            margin: 15px auto;
-            padding: 5px 15px;
-            text-transform: lowercase;
-            font-size: 0.6rem;
-            transition: all $transition;
-            display: block;
-            
-            &:hover {
-                background-color: $accent2;
-                color: black;
-                font-weight: bold;
-            }
-        }
-    }
+		button {
+			background-color: $mainFont;
+			color: $background;
+			width: 60%;
+			border: none;
+			border-radius: 25px;
+			margin: 15px auto;
+			padding: 5px 15px;
+			text-transform: lowercase;
+			font-size: 0.6rem;
+			transition: all $transition;
+			display: block;
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 20px;
+			&:hover {
+				background-color: $accent2;
+				color: black;
+				font-weight: bold;
+			}
+		}
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-top: 20px;
+
+		a {
+			padding: 20px;
+		}
+	}
+
+	h3 {
+		text-align: center;
+	}
+}
+
+@media (min-width: 600px) {
+	form {
+
+		.flexContainer {
+			display: flex;
+			flex-direction: row;
+        }
         
-        a {
-            padding: 20px;
+        .name {
+            margin-right: 10px;
         }
-    }
+	}
+}
 
-    h3 {
-        text-align: center;
-    }
+@media (min-width: 800px) {
+	.contact {
+		width: 80%;
+	}
 }

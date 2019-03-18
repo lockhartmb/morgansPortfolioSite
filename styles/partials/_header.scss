@@ -19,12 +19,15 @@
 
 header {
 	min-height: 100vh;
-	background-color: $background;
 	display: flex;
 	flex-direction: column;
 }
 
 .headerContent {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../assets/plantHeader2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
 	width: 100%;
 	flex-grow: 1;
     text-align: left;
@@ -33,7 +36,6 @@ header {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
         height: 100%;
         position: relative;
 	}
@@ -42,7 +44,7 @@ header {
         position: absolute;
         top: 50%;
         left: 0;
-        width: 100%;
+        width: 38%;
         transform: translateY(-50%);
         font-size: 5rem;
         font-weight: bold;
@@ -54,9 +56,10 @@ header {
     }
 
     h1 {
-        padding-top: 50%;
         line-height: 2.3rem;
         z-index: 99;
+        padding-top: 80px;
+        width: 38%;
     }
     
     span {
@@ -81,6 +84,13 @@ header {
         width: 100%;
         text-align: center;
         z-index: 99;
-        margin: auto 0 50px 0;
+        margin: 50px auto 0 auto;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .headerContent {
+	    width: 80%;
     }
 }

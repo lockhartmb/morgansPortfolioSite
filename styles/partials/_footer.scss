@@ -4,3 +4,9 @@ footer {
     text-align: center;
     padding-bottom: 20px;
 }
+
+@media (min-width: 800px) {
+    footer {
+        width: 80%;
+    }
+}

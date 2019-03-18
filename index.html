@@ -43,6 +43,16 @@
                     <i class="fas fa-times"></i>
                     <span class="visuallyHidden">Click to close menu</span>
                 </p>
+                <div class="prism desktopPrism">
+                    <div class="side front"></div>
+                    <div class="side back"></div>
+                    <div class="side right"></div>
+                    <div class="side left"></div>
+                    <div class="side topFront"></div>
+                    <div class="side topBack"></div>
+                    <div class="side bottomFront"></div>
+                    <div class="side bottomBack"></div>
+                </div>
                 <ul class="links pageLinks">
                     <li>
                         <a href="">Home</a>
@@ -99,6 +109,7 @@
                     <i class="fas fa-caret-down"></i>
                     <span class="visuallyHidden">Click to scroll to the about section</span>
                 </a>
+
             </div> <!-- end of wrapper div -->
         </section>
 
@@ -111,8 +122,15 @@
         <section id="about" class="about">
             <div class="wrapper">
                 <h2>About me<span>.</span></h2>
-                <img src="assets/morganHeadshot.jpg" alt="Morgan Lockhart wearing a white shirt and a gold necklace">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sunt neque! Earum voluptate mollitia rerum architecto pariatur minima tenetur labore. Voluptatem dolorum tempore ipsam. Dolorem deleniti sit similique eveniet et?</p>
+                <div class="flexContainer">
+                    <img src="assets/morganHeadshot.jpg"
+                        alt="Morgan Lockhart wearing a white shirt and a gold necklace">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sunt neque! Earum voluptate
+                        mollitia rerum architecto pariatur minima tenetur labore. Voluptatem dolorum tempore ipsam.
+                        Dolorem deleniti sit similique eveniet et? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Nulla corporis ut rerum officia praesentium possimus eos earum, dignissimos ipsa. Unde
+                        officia optio praesentium incidunt aut voluptatibus voluptatum rerum ipsum cumque.</p>
+                </div>
                 <a href="#skills">
                     <div class="pointedPrism prism">
                         <div class="side front"></div>
@@ -200,7 +218,7 @@
                         </figcaption>
                     </figure>
                     <figure class="galleryItem">
-                        <img class="responsive" src="assets/responsive-design.svg" alt="responsive design icon">
+                        <img class="responsive" src="assets/responsiveDesign.svg" alt="responsive design icon">
                         <figcaption>
                             Responsive
                         </figcaption>
@@ -230,51 +248,59 @@
 
                 <div class="project">
 
-                    <img src="assets/boxOfficeBoffo.png" alt="desktop view of the Box Office Boffo app">
-
+                    <img src="assets/boxOfficeBoffoDesktop.png" alt="desktop view of the Box Office Boffo app">
                     <p class="subtitle">React, API, Firebase <span class="interpunt">·</span><em> Group</em></p>
                     <h3>Box Office Boffo</h3>
-
-                    <p class="description">Predict the top ten highest grossing movies of the summer and compete against your friends for bragging rights.</p>
-                    <a href="https://auth-test-d2fa2.firebaseapp.com/" target="_blank">Live<i class="fas fa-arrow-right"></i></a>
-                    <a href="https://github.com/lockhartmb/boxOfficeBoffo" target="_blank">GitHub<i class="fas fa-arrow-right"></i></a>
-
-                </div>
-
-                <div class="project">
-
-                    <img src="assets/theOfficeTrivia.png" alt="desktop view of The Office Trivia Game">
-
-                    <p class="subtitle">HTML5, CSS3, jQuery <span class="interpunt">·</span><em> Solo</em></p>
-                    <h3>World's best The Office Trivia Game</h3>
-
-                    <p class="description">Test your trivia knowledge of this NBC masterpiece.</p>
-                    <a href="" target="_blank">Live <i class="fas fa-arrow-right"></i></a>
-                    <a href="" target="_blank">GitHub <i class="fas fa-arrow-right"></i></a>
+                    <p class="description">Predict the top ten highest grossing movies of the summer and compete against
+                        your friends for bragging rights.</p>
+                    <a href="https://auth-test-d2fa2.firebaseapp.com/" target="_blank">Live<i
+                            class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/lockhartmb/boxOfficeBoffo" target="_blank">GitHub<i
+                            class="fas fa-arrow-right"></i></a>
 
                 </div>
 
                 <div class="project">
 
-                    <img src="" alt="">
-                    <p class="subtitle">HTML5, CSS3, jQuery <span class="interpunt">·</span><em> Solo</em></p>
-                    <h3>Project 3</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sed et officiis fugit nemo quisquam
-                        dicta quaerat fugiat voluptatum atque.</p>
-                    <a href="" target="_blank">Live <i class="fas fa-arrow-right"></i></a>
-                    <a href="" target="_blank">GitHub <i class="fas fa-arrow-right"></i></a>
+                    <img src="assets/askPeevesDesktop.png" alt="desktop view of the Ask Peeves website landing page">
+                    <p class="subtitle">React, API <span class="interpunt">·</span><em> Solo</em></p>
+                    <h3>Ask Peeves</h3>
+                    <p class="description">Took a wrong turn in the Floo Network and ended up in Knocturn Alley?
+                        Carefully selected spells appropriate for the situation delivered straight to your wand, or
+                        phone.</p>
+                    <a href="https://lockhartmb.github.io/morganLockhartProject5AskPeeves/" target="_blank">Live <i
+                            class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/lockhartmb/morganLockhartProject5AskPeeves" target="_blank">GitHub <i
+                            class="fas fa-arrow-right"></i></a>
 
                 </div>
 
                 <div class="project">
 
-                    <img src="" alt="">
-                    <p class="subtitle">some stuff about this thing</p>
-                    <h3>Project 4</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sed et officiis fugit nemo quisquam
-                        dicta quaerat fugiat voluptatum atque.</p>
-                    <a href="" target="_blank">Live <i class="fas fa-arrow-right"></i></a>
-                    <a href="" target="_blank">GitHub <i class="fas fa-arrow-right"></i></a>
+                    <img src="assets/sunDialUpDesktop.png" alt="desktop view of the Sun Dial Up website at sunset">
+                    <p class="subtitle">CSS, jQuery, API <span class="interpunt">·</span><em> Paired-programming</em>
+                    </p>
+                    <h3>Sun DialUp</h3>
+                    <p class="description">Based on your time of day, the background of this beautiful app will change
+                        in real time to relect the sky outside.</p>
+                    <a href="https://lockhartmb.github.io/project4SunDialUp/" target="_blank">Live <i
+                            class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/lockhartmb/project4SunDialUp" target="_blank">GitHub <i
+                            class="fas fa-arrow-right"></i></a>
+
+                </div>
+
+                <div class="project">
+
+                    <img src="assets/plantedDesktop.png" alt="desktop view of the Planted website landing page">
+                    <p class="subtitle">HTML5, CSS3, PSD conversion <span class="interpunt">·</span><em> Solo</em></p>
+                    <h3>Planted</h3>
+                    <p class="description">A multipage PSD conversion with an intricate layout and
+                        multiple forms.</p>
+                    <a href="https://lockhartmb.github.io/morganLockhartProject2/" target="_blank">Live <i
+                            class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/lockhartmb/morganLockhartProject2" target="_blank">GitHub <i
+                            class="fas fa-arrow-right"></i></a>
 
                 </div>
 
@@ -303,15 +329,18 @@
             <div class="wrapper">
                 <h2>Contact me<span>.</span></h2>
 
-                <p>You can reach me by email at <a href="mailto: lockhart.mb@gmail.com">lockhart.mb@gmail.com</a> or through the form below.</p>
-                
-                <form action="https://formspree.io/lockhart.mb@gmail.com" method="POST" >
+                <p>Reach me by email at <a href="mailto: lockhart.mb@gmail.com">lockhart.mb@gmail.com</a> or
+                    through the form below.</p>
 
-                    <label for="name" class="visuallyHidden">Enter your name</label>
-                    <input type="text" name="name" placeholder="Name" class="name" id="name" required>
+                <form action="https://formspree.io/lockhart.mb@gmail.com" method="POST">
 
-                    <label for="email" class="visuallyHidden">Enter your email</label>
-                    <input type="email" name="email" placeholder="Email" class="email" id="email" required>
+                    <div class="flexContainer">
+                        <label for="name" class="visuallyHidden">Enter your name</label>
+                        <input type="text" name="name" placeholder="Name" class="name" id="name" required>
+
+                        <label for="email" class="visuallyHidden">Enter your email</label>
+                        <input type="email" name="email" placeholder="Email" class="email" id="email" required>
+                    </div>
 
                     <label for="message" class="visuallyHidden">Write your message here</label>
                     <textarea name="message" id="message" cols="" rows="" placeholder="Message" required></textarea>
@@ -354,8 +383,7 @@
 
     <footer>
         <div class="wrapper">
-            <p>Morgan Lockhart</p>
-            <p>Copyright 2019</p>
+            <p>© 2019, Morgan Lockhart</p>
         </div>
     </footer>
 

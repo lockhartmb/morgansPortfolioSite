@@ -23,9 +23,11 @@ header .menu {
 	z-index: 999;
 
 	.wrapper {
+		width: 75%;
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: flex-start;
 		height: 100%;
 	}
 
@@ -40,6 +42,10 @@ header .menu {
 		}
 	}
 
+    .desktopPrism {
+        display: none;
+    }
+    
 	.links {
 		padding: 0;
 		text-transform: uppercase;
@@ -57,14 +63,19 @@ header .menu {
 	}
 
 	.pageLinks {
+		flex-grow: 2;
+		padding-top: 50px;
+		
 		a {
 			display: block;
 		}
 	}
-
+	
 	.socialLinks {
+		flex-grow: 1;
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
 		margin-bottom: 20px;
 		font-size: 1rem;
 	}
@@ -79,4 +90,34 @@ header .menu {
 		font-size: 200%;
 		line-height: 0;
 	}
+}
+
+@media (min-width: 500px) {
+	.menu {
+		width: 30%;
+	}
+}
+
+@media (min-width: 800px) {
+    header .menu {
+		display: block;
+		width: 20%;
+	}
+
+	.menuOpen {
+		display: none;
+	}
+
+	.menu {
+
+		.closeMenu {
+			display: none;
+		}
+	
+		.desktopPrism {
+			display: block;
+			margin: 30px auto;
+		}
+	}
+    
 }

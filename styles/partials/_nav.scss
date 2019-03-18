@@ -14,7 +14,7 @@ header .menu {
 .menu {
 	width: 60%;
 	height: 100vh;
-	background-color: rgba($background, 0.5);
+	background-color: rgba(darken($background, 10%), 0.9);
 	padding: 1px 0;
 	position: fixed;
 	right: 0;

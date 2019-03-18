@@ -29,6 +29,7 @@
 		textarea {
 			width: 100%;
 			border: none;
+			border: 1px solid transparent;
 			border-bottom: 1px solid $mainFont;
 			background-color: $background;
 			padding: 10px 10px;

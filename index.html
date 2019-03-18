@@ -70,7 +70,7 @@
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
-                <ul class="links socialLinks">
+                <!-- <ul class="links socialLinks">
                     <li>
                         <a href="https://twitter.com/morganblockhart" target="_blank">
                             <i class="fab fa-twitter"></i>
@@ -95,7 +95,7 @@
                             <span class="visuallyHidden">Blog</span>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </nav>
 
@@ -121,10 +121,12 @@
 
         <section id="about" class="about">
             <div class="wrapper">
-                <h2>About me<span>.</span></h2>
+                <h2>About me</h2>
                 <div class="flexContainer">
-                    <img src="assets/morganHeadshot.jpg"
-                        alt="Morgan Lockhart wearing a white shirt and a gold necklace">
+                    <div class="headshot">
+                        <img src="assets/morganHeadshot.jpg"
+                            alt="Morgan Lockhart wearing a white shirt and a gold necklace">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sunt neque! Earum voluptate
                         mollitia rerum architecto pariatur minima tenetur labore. Voluptatem dolorum tempore ipsam.
                         Dolorem deleniti sit similique eveniet et? Lorem ipsum dolor sit amet consectetur adipisicing
@@ -155,7 +157,7 @@
 
         <section id="skills" class="skills">
             <div class="wrapper">
-                <h2>Skills<span>.</span></h2>
+                <h2>Skills</h2>
                 <div class="gallery">
                     <figure class="galleryItem">
                         <i class="devicon-html5-plain"></i>
@@ -218,6 +220,12 @@
                         </figcaption>
                     </figure>
                     <figure class="galleryItem">
+                        <img class="firebase" src="assets/firebase.svg" alt="a firebase icon">
+                        <figcaption>
+                            Firebase
+                        </figcaption>
+                    </figure>
+                    <figure class="galleryItem">
                         <img class="responsive" src="assets/responsiveDesign.svg" alt="responsive design icon">
                         <figcaption>
                             Responsive
@@ -244,64 +252,85 @@
 
         <section id="portfolio" class="portfolio">
             <div class="wrapper">
-                <h2>Latest work<span>.</span></h2>
+                <h2>Latest work</h2>
 
+                <!-- First project -->
                 <div class="project">
+                    <div class="screenshot">
+                        <img src="assets/boxOfficeBoffoDesktop.png" alt="desktop view of the Box Office Boffo app">
+                        <p class="subtitle">React, API, Firebase <span class="interpunt">·</span><em> Group</em></p>
+                    </div>
 
-                    <img src="assets/boxOfficeBoffoDesktop.png" alt="desktop view of the Box Office Boffo app">
-                    <p class="subtitle">React, API, Firebase <span class="interpunt">·</span><em> Group</em></p>
-                    <h3>Box Office Boffo</h3>
-                    <p class="description">Predict the top ten highest grossing movies of the summer and compete against
-                        your friends for bragging rights.</p>
-                    <a href="https://auth-test-d2fa2.firebaseapp.com/" target="_blank">Live<i
-                            class="fas fa-arrow-right"></i></a>
-                    <a href="https://github.com/lockhartmb/boxOfficeBoffo" target="_blank">GitHub<i
-                            class="fas fa-arrow-right"></i></a>
-
+                    <div class="projectDescription">
+                        <h3>Box Office Boffo<span>.</span></h3>
+                        <p class="description">Predict the top ten highest grossing movies of the summer and compete
+                            against
+                            your friends for bragging rights.</p>
+                        <a href="https://auth-test-d2fa2.firebaseapp.com/" target="_blank">Live<i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/lockhartmb/boxOfficeBoffo" target="_blank">GitHub<i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <div class="project">
+                <!-- Second project -->
+                <div class="project evenProject">
+                    <div class="screenshot">
+                        <img src="assets/askPeevesDesktop.png"
+                            alt="desktop view of the Ask Peeves website landing page">
+                        <p class="subtitle">React, API <span class="interpunt">·</span><em> Solo</em></p>
+                    </div>
 
-                    <img src="assets/askPeevesDesktop.png" alt="desktop view of the Ask Peeves website landing page">
-                    <p class="subtitle">React, API <span class="interpunt">·</span><em> Solo</em></p>
-                    <h3>Ask Peeves</h3>
-                    <p class="description">Took a wrong turn in the Floo Network and ended up in Knocturn Alley?
-                        Carefully selected spells appropriate for the situation delivered straight to your wand, or
-                        phone.</p>
-                    <a href="https://lockhartmb.github.io/morganLockhartProject5AskPeeves/" target="_blank">Live <i
-                            class="fas fa-arrow-right"></i></a>
-                    <a href="https://github.com/lockhartmb/morganLockhartProject5AskPeeves" target="_blank">GitHub <i
-                            class="fas fa-arrow-right"></i></a>
-
+                    <div class="projectDescription">
+                        <h3>Ask Peeves<span>.</span></h3>
+                        <p class="description">Took a wrong turn in the Floo Network and ended up in Knocturn Alley?
+                            Carefully selected spells appropriate for the situation delivered straight to your wand, or
+                            phone.</p>
+                        <a href="https://lockhartmb.github.io/morganLockhartProject5AskPeeves/" target="_blank">Live <i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/lockhartmb/morganLockhartProject5AskPeeves" target="_blank">GitHub
+                            <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
+                <!-- Third project -->
                 <div class="project">
+                    <div class="screenshot">
+                        <img src="assets/sunDialUpDesktop.png" alt="desktop view of the Sun Dial Up website at sunset">
+                        <p class="subtitle">CSS, jQuery, API <span class="interpunt">·</span><em>
+                                Paired-programming</em>
+                        </p>
+                    </div>
 
-                    <img src="assets/sunDialUpDesktop.png" alt="desktop view of the Sun Dial Up website at sunset">
-                    <p class="subtitle">CSS, jQuery, API <span class="interpunt">·</span><em> Paired-programming</em>
-                    </p>
-                    <h3>Sun DialUp</h3>
-                    <p class="description">Based on your time of day, the background of this beautiful app will change
-                        in real time to relect the sky outside.</p>
-                    <a href="https://lockhartmb.github.io/project4SunDialUp/" target="_blank">Live <i
-                            class="fas fa-arrow-right"></i></a>
-                    <a href="https://github.com/lockhartmb/project4SunDialUp" target="_blank">GitHub <i
-                            class="fas fa-arrow-right"></i></a>
-
+                    <div class="projectDescription">
+                        <h3>Sun DialUp<span>.</span></h3>
+                        <p class="description">Based on your time of day, the background of this beautiful app will
+                            change
+                            in real time to relect the sky outside.</p>
+                        <a href="https://lockhartmb.github.io/project4SunDialUp/" target="_blank">Live <i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/lockhartmb/project4SunDialUp" target="_blank">GitHub <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <div class="project">
+                <!-- Fourth project -->
+                <div class="project evenProject">
+                    <div class="screenshot">
+                        <img src="assets/plantedDesktop.png" alt="desktop view of the Planted website landing page">
+                        <p class="subtitle">HTML5, CSS3, PSD conversion <span class="interpunt">·</span><em> Solo</em>
+                        </p>
+                    </div>
 
-                    <img src="assets/plantedDesktop.png" alt="desktop view of the Planted website landing page">
-                    <p class="subtitle">HTML5, CSS3, PSD conversion <span class="interpunt">·</span><em> Solo</em></p>
-                    <h3>Planted</h3>
-                    <p class="description">A multipage PSD conversion with an intricate layout and
-                        multiple forms.</p>
-                    <a href="https://lockhartmb.github.io/morganLockhartProject2/" target="_blank">Live <i
-                            class="fas fa-arrow-right"></i></a>
-                    <a href="https://github.com/lockhartmb/morganLockhartProject2" target="_blank">GitHub <i
-                            class="fas fa-arrow-right"></i></a>
-
+                    <div class="projectDescription">
+                        <h3>Planted<span>.</span></h3>
+                        <p class="description">A multipage PSD conversion with an intricate layout and
+                            multiple forms.</p>
+                        <a href="https://lockhartmb.github.io/morganLockhartProject2/" target="_blank">Live <i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/lockhartmb/morganLockhartProject2" target="_blank">GitHub <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
                 <a href="#contact">
@@ -327,7 +356,7 @@
 
         <section id="contact" class="contact">
             <div class="wrapper">
-                <h2>Contact me<span>.</span></h2>
+                <h2>Contact me</h2>
 
                 <p>Reach me by email at <a href="mailto: lockhart.mb@gmail.com">lockhart.mb@gmail.com</a> or
                     through the form below.</p>

@@ -16,11 +16,25 @@ h3 {
 }
 
 h2 {
+	position: relative;
 	text-align: center;
     text-transform: capitalize;
     margin-bottom: 20px;
+	
+	&::after {
+		content: '';
+		width: 60%;
+		height: 3px;
+		background-color: $accent2;
+		position: absolute;
+		left: 20%;
+		bottom: -5px;
+	}
+}
 
-    span {
+h3 {
+
+	span {
         color: $accent2;
         font-size: 2rem;
         line-height: 0;

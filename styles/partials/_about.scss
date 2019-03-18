@@ -1,5 +1,9 @@
 .about {
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     span {
         color: $accent2;
@@ -11,8 +15,7 @@
         margin-bottom: 20px;
     }
 
-    img {
-        border-radius: 5px;
+    .headshot {
         width: 80%;
         margin: 0 auto 20px auto;
     }
@@ -30,7 +33,7 @@
 @media (min-width: 550px) {
     .about {
 
-        img {
+        .headshot {
             width: 50%;
         }
     }
@@ -44,11 +47,10 @@
         .flexContainer {
             display: flex;
             flex-direction: row;
-            align-items: center;
             margin: 30px 0;
         }
 
-        img {
+        .headshot {
             width: 35%;
             margin: 0;
         }

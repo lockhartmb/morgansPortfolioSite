@@ -34,6 +34,7 @@
 			background-color: $background;
 			padding: 10px 10px;
 			margin-bottom: 10px;
+			border-radius: 0;
 
 			&:focus {
 				border: 1px dotted $accent2;

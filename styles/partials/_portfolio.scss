@@ -75,8 +75,11 @@
 	a {
         width: 100%;
         display: block;
+	}
+	
+    .side {
+		border: 1px solid $accent2;
     }
-
 }
 
 @media (min-width: 800px) {
@@ -102,7 +105,7 @@
 
 		.projectDescription {
             width: 50%;
-            padding: 0 20px;
+            padding: 0 50px;
 		}
 
 		h3 {

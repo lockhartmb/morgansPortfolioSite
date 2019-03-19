@@ -23,6 +23,10 @@
         width: 100%;
         display: block;
     }
+    
+    .side {
+        border: 1px solid $accent2;
+    }
 
     .prism {
         margin: 40px auto 0 auto;
@@ -53,9 +57,9 @@
             margin: 0;
         }
 
-        p {
+        .aboutContent {
             width: 65%;
-            padding: 0 30px;
+            padding-left: 50px;
         }
     }
 }

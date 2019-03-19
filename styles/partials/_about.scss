@@ -1,5 +1,4 @@
 .about {
-    text-align: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -41,7 +40,6 @@
 
 @media (min-width: 800px) {
     .about {
-        text-align: left;
         width: 80%;
 
         .flexContainer {

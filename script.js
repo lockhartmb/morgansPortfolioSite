@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
     $('.menuOpen').on('click', () => {
-
+        // console.log('i was clicked');
         if ($('.menu').hasClass('showMenu')) {
             $('.menu').fadeOut();
             $('.menu').removeClass('showMenu');
@@ -15,5 +15,5 @@ $(document).ready(() => {
         $('.menu').fadeOut();
         $('.menu').removeClass('showMenu');
     })
-    
+
 })
